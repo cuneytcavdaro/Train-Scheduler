@@ -23,10 +23,7 @@ $(document).ready(function(){
          tDestination = $("#train-destination").val().trim();
          tTime = moment($("#train-time").val().trim(), "hh:mm").subtract(1, "years").format("X");
          tFrequency = $("#train-frequency");
-        //  var currentTime = moment();
- 
-        // console.log("Current Time: " + moment(currentTime).format("hh:mm"));
-
+      
         
         database.ref().push(
         {
